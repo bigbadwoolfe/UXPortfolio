@@ -1,0 +1,33 @@
+@import 'variables.less';
+
+.content-box(@themeColor) {
+  background-color: @content-background;
+  p:first-child:first-letter {
+    color: @themeColor;
+  }
+}
+
+.nav-box(@bcgColor: @boxColor; @txtColor: #e9e9e9) {
+  background-color: @bcgColor;
+  color: @txtColor;
+  border: 2px solid transparent;
+}
+
+.show-nav-desc() {
+  span {
+    display: block;
+  }
+}
+
+.hide-nav-desc() {
+  span {
+    display: none;
+  }
+}
+
+.transition-two(@transition1, @transition1-duration, @transition2, @transition2-duration) {
+  -webkit-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+  -moz-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+  -o-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+  transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+}
