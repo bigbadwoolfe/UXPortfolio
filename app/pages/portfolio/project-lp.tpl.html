@@ -16,8 +16,16 @@
         <p>I documented user requirements, created use cases and information architecture, designed workflows, graphics, interaction and participated in the actual implementation of the product.</p>
 
         <figure class="inline-image-holder clearfix">
-            <img src="assets/images/lp-full-page-paper-sketch.png" class="clickable col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1" ng-click="showPhoto('assets/images/lp-full-page-paper-sketch.png', 'lg', 'LotteryPals.com - UI sketch made during very early stages of project.')" style="margin-left: 8.33333%"/>
-            <img src="assets/images/lp-full-page-web-view.png" class="clickable col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2" ng-click="showPhoto('assets/images/lp-full-page-web-view.png', 'lg', 'LotteryPals.com - Final mock up showing the same functionality as the early sketch.')"/>
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <img src="assets/images/lp-full-page-paper-sketch.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-paper-sketch.png', 'lg', 'LotteryPals.com - UI sketch made during very early stages of project.')"/>
+                </div>
+                <div class="col-sm-5">
+                    <img src="assets/images/lp-full-page-web-view.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-web-view.png', 'lg', 'LotteryPals.com - Final mock up showing the same functionality as the early sketch.')"/>
+                </div>
+            </div>
+
+
         </figure>
 
         <div class="row">
@@ -36,12 +44,12 @@
 
             <div class="col-sm-4 col-sm-offset-2 col-xs-12">
                 <h3>UX Design & Validation</h3>
-                <p>I designed the layouts and the UI. I tested across various platforms.</p>
+                <p>I designed the layouts and the UI. I ensured satisfactory results across various screen sizes.</p>
             </div>
 
             <div class="col-sm-4 col-xs-12">
                 <h3>UI Implementation</h3>
-                <p>I wrote the UI with mock data in HTML with CSS and JS, under MVC.NET. I tested for responsiveness and multiple screen resolutions. </p>
+                <p>I wrote the UI with mock data in HTML with CSS and JS, under MVC.NET. I tested for responsiveness, multiple screen sizes and across all popular browsers. </p>
             </div>
 
         </div>
@@ -55,6 +63,7 @@
             <li>Collecting money</li>
             <li>Scanning tickets and distributing copies</li>
             <li>Distributing small winnings, free plays, etc</li>
+            <li>Skipping a draw</li>
         </ul>
         <p>The group members and the ones wanting to join a group had a different set of problems:</p>
         <ul>
@@ -62,9 +71,23 @@
             <li>Difficulty to opt out occasionally</li>
             <li>Finding groups to join</li>
         </ul>
-        <p>In addition, the Ontario Lottery and Gaming Corp imposes strict rules for playing in groups that lettutututututututututututututututututututututututututututututututututututututut</p>
-
+        <p>In addition, the Ontario Lottery and Gaming Corp imposes strict rules for playing in groups that a company would be required to follow.</p>
+        <p>Finally, the company needed web presence how they would sign up new players. Here the goal is to explain the business model in simple terms while gaining the customer's trust.</p>
+        <p>With all this information I could create profiles for each identified user type (public, regular players, group managers, system administrators) and feature sets required by each user type and get a rough idea on how to present this in a self-explanatory way.</p>
         <h1>Definition</h1>
+        <p>The application is a heavily data-driven one. Different user types would exist, each with different capabilities. For that, I had to create a user-privilege matrix, and once I had that, create the site maps and user workflows.</p>
+        <p>The two major components would be the public part of the web application and the member's portal. </p>
+
+        <figure class="inline-image-holder clearfix">
+            <div class="row">
+                <div class="col-sm-4"><img src="assets/images/lp-sitemaps.png" class="clickable" ng-click="showPhoto('assets/images/lp-sitemaps.png', 'lg', 'Site maps for the public website and member portal.')" /></div>
+                <div class="col-sm-4"><img src="assets/images/lp-workflow-1.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-1.png', 'lg', 'Sample workflow diagram  - joining playgroups.')" /></div>
+                <div class="col-sm-4"><img src="assets/images/lp-workflow-2.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-2.png', 'lg', 'Sample Workflow diagram  - depositing funds.')" /></div>
+            </div>
+
+
+
+        </figure>
         <h1>Design</h1>
         <h1>Evaluation</h1>
 

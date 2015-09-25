@@ -10,4 +10,8 @@ angular.module('mbPortfolio', [
   'mbPortfolio.resume',
   'mbPortfolio.contact',
   'mbPortfolio.components'
-]);
+]).config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/', {
+    redirectTo: '/about'
+  });
+}]);
