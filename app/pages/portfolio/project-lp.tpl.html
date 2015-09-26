@@ -11,22 +11,38 @@
     </div>
 
     <div class="body">
+        <h1>The Service</h1>
+        <p>LotteryPals.com would allow users to buy and track their lottery tickets online, and more importantly, would simplify the process of creating, managing and joining groups. </p>
+
+
         <h1>My Role</h1>
-        <p>I lead the design of the application from an idea to a functional product.</p>
+        <p>I led the design of the application from an idea to a functional product.</p>
         <p>I documented user requirements, created use cases and information architecture, designed workflows, graphics, interaction and participated in the actual implementation of the product.</p>
 
-        <figure class="inline-image-holder clearfix">
+        <div class="inline-image-holder clearfix">
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <img src="assets/images/lp-full-page-paper-sketch.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-paper-sketch.png', 'resp', 'LotteryPals.com - UI sketch made during very early stages of project.')"/>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-full-page-paper-sketch.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-paper-sketch.png', 'resp', 'UI sketch made during very early stages of project.')"/>
+                        <figcaption>Paper sketch of the UI</figcaption>
+                    </figure>
                 </div>
-                <div class="col-sm-5">
-                    <img src="assets/images/lp-full-page-web-view.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-web-view.png', 'resp', 'LotteryPals.com - Final mock up showing the same functionality as the early sketch.')"/>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-full-page-wireframe.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-wireframe.png', 'resp', 'Wireframe showing possible page layout.')"/>
+                        <figcaption>Wireframing the UI</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-full-page-web-view.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-web-view.png', 'resp', 'Final mock up showing the same functionality as the early sketch.')"/>
+                        <figcaption>Final mock up</figcaption>
+                    </figure>
                 </div>
             </div>
 
 
-        </figure>
+        </div>
 
         <div class="row">
             <div class="col-sm-4 col-xs-12">
@@ -35,11 +51,11 @@
             </div>
             <div class="col-sm-4 col-xs-12">
                 <h3>Planning and Project Management</h3>
-                <p>I created the steps that need to be taken to finish the project, from user profiling through architecture and design to implementation. I prioritized features based on business goals.</p>
+                <p>I created the steps that need to be taken to finish the project, from user profiling through architecture and design to implementation. I prioritized and balanced features based on user needs and business goals.</p>
             </div>
             <div class="col-sm-4 col-xs-12">
                 <h3>Information Architecture</h3>
-                <p>I produced documents that outline how the information will flow through the application in the most logical way. </p>
+                <p>I produced documents that outline how the information will flow through the application in the most logical way for the user. </p>
             </div>
 
             <div class="col-sm-4 col-sm-offset-2 col-xs-12">
@@ -62,8 +78,8 @@
         <ul>
             <li>Collecting money</li>
             <li>Scanning tickets and distributing copies</li>
+            <li>Skipping draws</li>
             <li>Distributing small winnings, free plays, etc</li>
-            <li>Skipping a draw</li>
         </ul>
         <p>The group members and the ones wanting to join a group had a different set of problems:</p>
         <ul>
@@ -72,24 +88,86 @@
             <li>Finding groups to join</li>
         </ul>
         <p>In addition, the Ontario Lottery and Gaming Corp imposes strict rules for playing in groups that a company would be required to follow.</p>
-        <p>Finally, the company needed web presence how they would sign up new players. Here the goal is to explain the business model in simple terms while gaining the customer's trust.</p>
+        <p>Finally, the company needed modern web presence how they would sign up new players. Here the goal is to explain the business model in simple terms while gaining the customer's trust. </p>
         <p>With all this information I could create profiles for each identified user type (public, regular players, group managers, system administrators) and feature sets required by each user type and get a rough idea on how to present this in a self-explanatory way.</p>
         <h1>Definition</h1>
         <p>The application is a heavily data-driven one. Different user types would exist, each with different capabilities. For that, I had to create a user-privilege matrix, and once I had that, create the site maps and user workflows.</p>
         <p>The two major components would be the public part of the web application and the member's portal. </p>
 
-        <figure class="inline-image-holder clearfix">
+        <div class="inline-image-holder clearfix">
             <div class="row">
-                <div class="col-sm-4"><img src="assets/images/lp-sitemaps.png" class="clickable" ng-click="showPhoto('assets/images/lp-sitemaps.png', 'resp', 'Site maps for the public website and member portal.')" /></div>
-                <div class="col-sm-4"><img src="assets/images/lp-workflow-1.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-1.png', 'resp', 'Sample workflow diagram  - joining playgroups.')" /></div>
-                <div class="col-sm-4"><img src="assets/images/lp-workflow-2.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-2.png', 'resp', 'Sample Workflow diagram  - depositing funds.')" /></div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-sitemaps.png" class="clickable" ng-click="showPhoto('assets/images/lp-sitemaps.png', 'resp', 'Site maps for the public website and member portal.')" />
+                        <figcaption>LotteryPals.com site maps</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-workflow-1.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-1.png', 'resp', 'Sample workflow diagram  - joining playgroups.')" />
+                        <figcaption>Sample workflow - joining a playgroup</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img src="assets/images/lp-workflow-2.png" class="clickable" ng-click="showPhoto('assets/images/lp-workflow-2.png', 'resp', 'Sample Workflow diagram  - depositing funds.')" />
+                        <figcaption>
+                            Sample workflow - depositing funds
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+        </div>
 
-
-
-        </figure>
         <h1>Design</h1>
-        <h1>Evaluation</h1>
+        <p>Due to the nature of the application, it was imperative that users would be left with both a sense of security and playfulness from the very beginning.</p>
+        <blockquote>
+            "You never get a second chance to make a first impression."
+        </blockquote>
 
+        <h3>Influencing user feelings</h3>
+        <p>To address the security feeling, I needed to show a professionally designed and built application. Everything had to be air-tight and consistent throughout the application. This includes layout elements, messages and content. There could not be any room for doubt.</p>
+        <p>To protect the user, possibilities for mistakes were eliminated as much as possible from all workflows. The users were further reassured by confirming actions and they were given the ability to undo any action for a period of time.</p>
+        <p>To achieve playfulness I used vibrant colors and relevant graphics that pop off the background.</p>
+        <p>The challenge was to keep a good balance between feeling secure and feeling playful, as these two often do not go hand in hand.</p>
+
+        <div class="inline-image-holder clearfix">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <figure>
+                        <img src="assets/images/lp-full-page-public.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-public.png', 'resp', 'Rendering of the public landing page.')" />
+                        <figcaption>Public landing page</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2">
+                    <figure>
+                        <img src="assets/images/lp-full-page-member.png" class="clickable" ng-click="showPhoto('assets/images/lp-full-page-member.png', 'resp', 'Rendering of the member dashboard.')" />
+                        <figcaption>Member dashboard</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <h3>Simplicity</h3>
+        <p>Users were expected to join to alleviate pain. This application mustn't create any new one.</p>
+        <p>All data entry forms were simplified and heavily contextual. Logical ranges and visual elements to aid the information exchange were created. </p>
+        <div class="inline-image-holder clearfix">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <figure>
+                        <img src="assets/images/lp-simple-form.png" class="clickable" ng-click="showPhoto('assets/images/lp-simple-form.png', 'resp', 'Simple search form using sliders to define range boundaries and prevent user error')" />
+                        <figcaption>Search form</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <h1>Lessons Learned</h1>
+        <h3>Don't guess what the users want</h3>
+        <p>... ask them!</p>
+        <p>User interviews are invaluable tool. They provide validation to some ideas and completely shatter others. It is those users that will drive the business however, so when an idea is shattered, pick up the pieces and make it better. </p>
+        <h3>Stop planning and start doing</h3>
+        <p>No amount of pre-planning will yield a perfect solution the first time. Refining the product through iteration will happen no matter what, so the sooner it starts, the better. Get a good understanding of what is to be built, and start building it.</p>
+        <hr>
+        <a class="pull-left" href="#/portfolio">Back to portfolio</a>
     </div>
 </div>
