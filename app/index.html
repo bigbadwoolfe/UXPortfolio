@@ -18,18 +18,19 @@
     <link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-app="mbPortfolio">
+<body ng-app="mbPortfolio" ng-controller="SiteController">
 
-<header ng-controller="HeaderController" class="{{title}}" ng-cloak>
-    {{title}}
+
+<header ng-class="model.activeNavItem.id == 'about' ? 'about' : model.activeNavItem.id == 'process' ? 'process' : model.activeNavItem.id == 'portfolio' ? 'portfolio' : model.activeNavItem.id == 'resume' ? 'resume' : 'contact'" ng-cloak>
+    {{model.activeNavItem.text}}
 </header>
 
-<nav ng-controller="NavController">
-
+<nav>
     <a href="{{navItem.href}}"
-       ng-repeat="navItem in navItems"
-       ng-class="{'active': navItem.class === activeNavItem}" class="{{navItem.class}}"
-       ng-click="setActive(navItem.class);" ng-mouseenter="showHover(navItem.class);"
+       ng-click="setActive(navItem.id)"
+       ng-repeat="navItem in model.navItems"
+       ng-class="{'active': navItem.id === model.activeNavItem.id}" class="{{navItem.class}}"
+       ng-mouseenter="showHover(navItem.id);"
        ng-mouseleave="hideHover();" ng-cloak>
         <i class="fa fa-fw fa-{{navItem.icon}}"></i>
         <span>{{navItem.text}}</span></a>
@@ -74,8 +75,6 @@
 <script src="pages/resume/resume.js"></script>
 <script src="pages/contact/contact.js"></script>
 <script src="components/components.mod.js"></script>
-<script src="components/nav/nav.ctrl.js"></script>
-<script src="components/header/header.ctrl.js"></script>
 <script src="components/content/content.ctrl.js"></script>
 <script src="components/image-pop/image-pop.ctrl.js"></script>
 

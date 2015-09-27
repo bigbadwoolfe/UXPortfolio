@@ -78,7 +78,7 @@ body {
           right: -16px;
           color: @black;
         }
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           right: -33px;
           top: 237px;
           padding: 0 2px;
@@ -91,7 +91,7 @@ body {
           top: 99px;
           right: -44px;
         }
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           top: 250px;
           right: -45px;
         }
@@ -102,7 +102,7 @@ body {
           top: 132px;
           right: -78px;
         }
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           top: 264px;
           right: -62px;
         }
@@ -113,7 +113,7 @@ body {
           top: 87px;
           right: -33px;
         }
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           top: 241px;
           right: -39px;
         }
@@ -124,7 +124,7 @@ body {
           top: 110px;
           right: -52px;
         }
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           top: 251px;
           right: -49px;
         }
@@ -135,21 +135,13 @@ body {
         line-height: (@nav-box-height - 40);
       }
 
-      @media @phone-and-tablet {
+      @media @tablet-and-below {
         font-size: 31px;
         line-height: 31px;
       }
     }
     nav {
       a {
-        span {
-          display: none;
-
-          &.active {
-            display: block;
-          }
-        }
-
         &:hover {
           span {
             color: @black;
@@ -177,14 +169,30 @@ body {
             color: @contact-main;
           }
         }
+
         &.active {
           @media @largeScreen {
-            .show-nav-desc();
+            span {
+              margin-top: 0;
+              display: block;
+              font-size: 40px;
+              position: fixed;
+              right: 0;
+              text-transform: uppercase;
+              width: 273px;
+              text-align: left;
+            }
           }
           @media @monitor {
             .hide-nav-desc();
           }
 
+        }
+
+        span {
+          @media @monitor-and-below {
+            display: none;
+          }
         }
 
         @media @largeScreen {
@@ -260,6 +268,7 @@ header {
   font-size: @nav-box-height;
   margin-left: 3px;
   text-transform: uppercase;
+  .transition(all 0.3s ease);
 
 
   @media @tablet {
@@ -268,6 +277,7 @@ header {
   @media @phone {
     font-size: (@nav-box-height - 55);
   }
+
   &.portfolio {
     color: @portfolio-main;
   }
@@ -318,12 +328,18 @@ nav {
     }
 
     span {
+      .transition(all 0.3s ease);
       display: block;
       font-size: 15px;
       margin-top: -25px;
       padding-left: 3px;
-      text-align: left
+      text-align: left;
+
+      @media @phone {
+        display: none;
+      }
     }
+
 
     &:hover,
     &:focus,
@@ -355,7 +371,7 @@ main {
   margin-top: 140px;
 
   @media @phone {
-    margin-right: (@nav-box-height - 65);
+    margin-right: (@nav-box-height - 65) !important;
   }
 
   .content {
@@ -385,7 +401,7 @@ main {
       img {
         &.logo {
           width: 100%;
-          @media @phone-and-tablet {
+          @media @tablet-and-below {
             width: 40%;
             display: block;
             margin: 0 auto;
@@ -407,7 +423,7 @@ main {
         margin-top: 5%;
         text-align: right;
 
-        @media @phone-and-tablet {
+        @media @tablet-and-below {
           margin-top: 10px;
           text-align: center;
         }
