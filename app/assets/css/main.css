@@ -35,6 +35,8 @@ img.spaced-hor {
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll !important;
+  height: 100%;
 }
 body div.sticky header {
   left: inherit;
