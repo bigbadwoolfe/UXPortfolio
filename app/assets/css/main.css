@@ -18,13 +18,6 @@ blockquote {
   font-family: 'Courgette', cursive;
   text-align: center;
 }
-img.clickable {
-  cursor: pointer;
-}
-img.clickable:hover {
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 3px #000000;
-}
 img.spaced {
   margin: 10px !important;
 }
@@ -33,6 +26,12 @@ img.spaced-vert {
 }
 img.spaced-hor {
   margin: 0 10px !important;
+}
+#body {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -535,10 +534,18 @@ main .content .inline-image-holder {
 }
 main .content .inline-image-holder img {
   width: 100%;
-  -webkit-transition: box-shadow 0.15s linear;
-  -o-transition: box-shadow 0.15s linear;
-  transition: box-shadow 0.15s linear;
+  -webkit-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
   border: 2px solid transparent;
+}
+main .content .inline-image-holder img.clickable {
+  cursor: pointer;
+  border-color: #666;
+}
+main .content .inline-image-holder img.clickable:hover {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 3px #000000;
 }
 main .content .inline-image-holder figcaption {
   margin: 5px 0;
@@ -556,7 +563,7 @@ main .card hr {
 main .card h4,
 main .card h5,
 main .card h6 {
-  margin: 5px 0;
+  margin: 5px 0px;
 }
 main .card .content {
   padding: 0 0 0 5px;

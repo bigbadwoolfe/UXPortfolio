@@ -7,7 +7,6 @@ html {
   height: 100%;
 }
 
-
 a {
   &:hover,
   &:focus,
@@ -29,22 +28,13 @@ p{
   }
 }
 
-
 blockquote {
   font-family: 'Courgette', cursive;
   text-align: center;
 }
 
-
-
 img {
-  &.clickable {
-    cursor: pointer;
-    &:hover {
-      border: 2px solid @white;
-      box-shadow: 0 0 3px @black;
-    }
-  }
+
   &.spaced {
     margin: 10px !important;
   }
@@ -56,8 +46,14 @@ img {
   }
 }
 
+#body {
+  opacity: 0;
+  .transition(opacity 0.3s ease);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+
 
   div.sticky {
     header {
@@ -569,14 +565,9 @@ main {
               margin-bottom: 0;
             }
           }
-
         }
       }
-
-
-
     }
-
 
     .inline-image-holder {
       text-align: center;
@@ -585,8 +576,16 @@ main {
 
       img {
         width: 100%;
-        .transition(box-shadow 0.15s linear);
+        .transition(all 0.15s ease);
         border: 2px solid transparent;
+        &.clickable {
+          cursor: pointer;
+          border-color: #666;
+          &:hover {
+            border: 2px solid @white;
+            box-shadow: 0 0 3px @black;
+          }
+        }
       }
 
       figcaption {
@@ -607,7 +606,7 @@ main {
     }
 
     h4, h5, h6 {
-      margin: 5px 0;
+      margin: 5px 0px;
     }
 
     .content {

@@ -1,12 +1,3 @@
-var Base = Base || {};
-
-$(function () {
-
-
-});
-
-
-
 if ($(window).width() <768)
     $('#body').addClass("sticky");
 
@@ -32,4 +23,13 @@ $(window).scroll(function() {
     else {
         $('#body').removeClass("sticky");
     }
+});
+
+
+setTimeout(function() {
+$("#body").css('opacity', 1);
+}, 2000);
+
+$(window).on('hashchange', function() {
+    window.scrollTo(0,0);
 });

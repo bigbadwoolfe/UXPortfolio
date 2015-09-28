@@ -57,6 +57,7 @@ angular.module('mbPortfolio', [
 
   function getCurrentNavItem() {
     return getNavItemByUrl($location.path());
+
   }
 
 
