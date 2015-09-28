@@ -1,12 +1,20 @@
 <div>
-    <div class="header">
-        <img alt="Seagate EVault Web Access" src="assets/images/seagate-logo.png"/>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="header">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <img alt="Seagate EVault Web Access" src="assets/images/seagate-logo.png" />
+                    </div>
+                </div>
 
-        <h3>
-            Easy-to-manage, automated data protection
-        </h3>
-
+                <h3>
+                    Easy-to-manage, automated data protection
+                </h3>
+            </div>
+        </div>
     </div>
+
 
     <div class="body">
         <h1>Product</h1>
@@ -271,16 +279,24 @@
 
 
         <h3>Optimizing and improving workflows - the Log Viewer</h3>
-        <p>In feedback collected from a user, a major pain point was revealed. Any time a backup process completes unsuccessfully, an administrator user needs to go through the generated log files and see why the process failed. What caught my attention were the steps needed to get the required information beyond checking the log files themselves.</p>
-        <p>First the administrator needs to go through thousands of lines of log files to find the error codes. Next, they have to copy them into Notepad,
-            and open the knowledge base website in a separate browser window. Finally search for information on all error codes. This search often times yields no results and all the effort is wasted.</p>
-        <p>This was a very manual and tedious process, requiring constant switching between multiple application. </p>
+        <p>In feedback collected from a user, a major pain point was revealed. Any time a backup process completes unsuccessfully, an administrator needs to go through the generated log files and see why the process failed. What caught my attention were the steps needed to get the required information beyond checking the log files themselves.</p>
+        <ol>
+            <li>Go through thousands of lines of log files and search for error codes</li>
+            <li>Write error codes on paper or Notepad</li>
+            <li>Open Seagate Knowledge Base - external website</li>
+            <li>Manually search each error code</li>
+            <li>If any results, open each result in a new window to get the information</li>
+            <li>If no results, all that time was just wasted - call support</li>
+        </ol>
+
+        <p>This was a very manual and tedious process, requiring constant switching between multiple application and juggling multiple error codes at once. </p>
         <p>
             My goal was to design a log viewer that would be the last place an administrator goes for information, and do it in a way that will require minimal effort.
         </p>
-        <p>First, I created an option to easily filter out error codes from the rest of the log content.
-            I further added more interactivity to the log viewer - a user see whether any error code has any search
-            results by simply clicking or hovering over the error code and also get the search results without the same window, without any context switching. </p>
+        <p>I created an option to easily filter out error codes from the rest of the log content. This reduced the number of lines an admin sees by up to 95%.
+            I further added more interactivity to the log viewer - a user could see whether any error code has any search
+            results by simply clicking or hovering over the error code. The search results and their content were available in the same window with another click. </p>
+        <p>No more searching through thousands of lines of text, switching between application or juggling error codes.</p>
         <div class="inline-image-holder clearfix">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
@@ -313,11 +329,11 @@
             </div>
         </div>
         <p>
-            The mission was accomplished. The new log viewer became one of the most loved features of Web Access.
+            Mission accomplished successfully. The new log viewer became one of the most loved features of Web Access.
         </p>
 
         <h3>Precise design documentation</h3>
-        <p>I documented the design so that developers can recreate elements easily, ensuring consistent look throughout the application. </p>
+        <p>I documented the design so that developers can recreate and populate layouts easily, ensuring consistent look throughout the application. </p>
 
         <div class="inline-image-holder clearfix">
             <div class="row">
@@ -350,14 +366,16 @@
             </div>
         </div>
 
+        <p>Similar documentation for use of typography, images, validation messages and other reusable web components was created. </p>
+
         <h3>Design Challenges</h3>
 
-        <p>The biggest challenge I faced was balancing the expectations of different layers of stakeholders. At every design iteration
-            the feedback received from all involved parties would range from slightly contradicting to completely opposite.
+        <p>The biggest challenge I faced was balancing the expectations of different stakeholder groups . At every design iteration
+            the feedback received from all involved parties would range from slightly contradictory to completely opposite.
         </p>
-        <p>For example, many of the users preferred context driven menus because it would speed up navigation,
-            but the product owners preferred static menus because it improves the discoverability of the application. </p>
-        <p>The solution was often a compromise, in this case, I created static menus in which non-applicable items are disabled and pushed to the bottom.</p>
+        <p>For example, many of the users preferred context driven menus because it would speed up navigation.
+            The product owners insisted on static menus because it improves the application discoverability. </p>
+        <p>The solution was often a compromise. In this case, I created static menus in which non-applicable items are disabled and pushed to the bottom and the relevant items are highlighted and at the top.</p>
 
         <div class="inline-image-holder clearfix">
             <div class="row">
@@ -384,18 +402,19 @@
 
         <h1>Validation</h1>
 
-        <p>I try to do a small usability study upon every release. I ask users to run through newly created workflows and observe if and where they stumble. I also ask for, receive and analyze feedback from customers and document findings.
+        <p>I try to do a small usability study upon every release. I ask users to run through newly created workflows and observe if and where they stumble.
+            I encourage them to think aloud and explain how they make choices about what they do. I also ask for, receive and analyze feedback from customers and document findings.
         </p>
         <p>Ever since the initial launch, Seagate EVault Web Access has been greatly accepted by the users. Steep voluntary
             conversion rate allowed the company to retire many products ahead of schedule, with the last one scheduled to be
-            retired by 2016. With that, Web Access becomes Seagate's only web application for managing cloud backup processes. </p>
+            retired by 2016. With that, Web Access is set to become Seagate's only web application for managing cloud backup processes. </p>
 
 
         <h1>Lessons Learned</h1>
         <h3>Users aren't as excited about my application as I am</h3>
-        <p>As exciting as that popup transition may seem, users will likely trade it for spending less time using the application in a heartbeat. In the eyes of the user,
+        <p>As exciting as that popup transition may seem, users will likely trade it for accomplishing their tasks quicker in a heartbeat. In the eyes of the user,
             optimized workflows are infinitely more useful than pretty interfaces. With that in mind, 3 of 4 people choose the prettier interface, and the 4th one
-            may or may not choose it. But nobody goes for the ugly one on purpose.</p>
+            will likely choose it as well. But nobody goes for the ugly one on purpose.</p>
 
         <h3>Users don't know what they want</h3>
         <p>... but they know what they don't want.</p>
@@ -412,8 +431,9 @@
             the new features added fit well with the rest of the product, both in terms of UI and workflows.
         </p>
         <p>I continue to design major features, oversee their development, and gather and analyze feedback. </p>
-        <p>Seagate EVault Web Access is being used by thousands of users daily who depend on it to manage the backups for hundreds of thousands of workstations and servers. The product is constantly growing and evolving, and while the
-            user experience allows Web Access to stand with the best in the business, the job is far from done.</p>
+        <p>Seagate EVault Web Access is being used by thousands of users daily who depend on it to manage the backups for hundreds of thousands of workstations and servers.
+            The product is constantly growing and evolving, and while the
+            experience the users have with Web Access allows it to stand with the best in the business, the job is far from done.</p>
 
 
         <hr>

@@ -35,11 +35,9 @@ img.spaced-hor {
   margin: 0 10px !important;
 }
 body {
-  height: 100%;
   font-family: 'Open Sans', sans-serif;
-  overflow-y: scroll !important;
 }
-body.sticky header {
+body div.sticky header {
   left: inherit;
   border: 2px solid transparent;
   -webkit-transform: rotate(-90deg);
@@ -48,19 +46,19 @@ body.sticky header {
   transform: rotate(-90deg);
 }
 @media (min-width: 1200px) {
-  body.sticky header {
+  body div.sticky header {
     display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header.about {
+  body div.sticky header.about {
     top: 73px;
     right: -16px;
     color: #000000;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header.about {
+  body div.sticky header.about {
     right: -33px;
     top: 237px;
     padding: 0 2px;
@@ -68,89 +66,89 @@ body.sticky header {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header.process {
+  body div.sticky header.process {
     top: 99px;
     right: -44px;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header.process {
+  body div.sticky header.process {
     top: 250px;
     right: -45px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header.portfolio {
+  body div.sticky header.portfolio {
     top: 132px;
     right: -78px;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header.portfolio {
+  body div.sticky header.portfolio {
     top: 264px;
     right: -62px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header.resume {
+  body div.sticky header.resume {
     top: 87px;
     right: -33px;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header.resume {
+  body div.sticky header.resume {
     top: 241px;
     right: -39px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header.contact {
+  body div.sticky header.contact {
     top: 110px;
     right: -52px;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header.contact {
+  body div.sticky header.contact {
     top: 251px;
     right: -49px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky header {
+  body div.sticky header {
     font-size: 60px;
     line-height: 60px;
   }
 }
 @media (max-width: 991px) {
-  body.sticky header {
+  body div.sticky header {
     font-size: 31px;
     line-height: 31px;
   }
 }
-body.sticky nav a:hover span {
+body div.sticky nav a:hover span {
   color: #000000;
 }
 @media (min-width: 1200px) {
-  body.sticky nav a:hover span {
+  body div.sticky nav a:hover span {
     display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky nav a:hover span {
+  body div.sticky nav a:hover span {
     display: none;
   }
 }
-body.sticky nav a.portfolio span {
+body div.sticky nav a.portfolio span {
   color: #0193dc;
 }
-body.sticky nav a.resume span {
+body div.sticky nav a.resume span {
   color: #d9271b;
 }
-body.sticky nav a.contact span {
+body div.sticky nav a.contact span {
   color: #ffcc00;
 }
 @media (min-width: 1200px) {
-  body.sticky nav a.active span {
+  body div.sticky nav a.active span {
     margin-top: 0;
     display: block;
     font-size: 40px;
@@ -162,24 +160,24 @@ body.sticky nav a.contact span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky nav a.active span {
+  body div.sticky nav a.active span {
     display: none;
   }
 }
 @media (max-width: 1199px) {
-  body.sticky nav a span {
+  body div.sticky nav a span {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  body.sticky nav a {
+  body div.sticky nav a {
     height: 50px;
     width: 50px;
   }
-  body.sticky nav a i.fa {
+  body div.sticky nav a i.fa {
     line-height: 50px;
   }
-  body.sticky nav a span {
+  body div.sticky nav a span {
     margin-top: -3px;
     text-align: center;
     color: #000000;
@@ -187,39 +185,39 @@ body.sticky nav a.contact span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.sticky nav a {
+  body div.sticky nav a {
     height: 50px;
     width: 50px;
     float: none;
     display: block;
     margin-bottom: 3px;
   }
-  body.sticky nav a i.fa {
+  body div.sticky nav a i.fa {
     line-height: 50px;
   }
 }
 @media (max-width: 767px) {
-  body.sticky nav a {
+  body div.sticky nav a {
     height: 35px;
     width: 35px;
     float: none;
     display: block;
     margin-bottom: 3px;
   }
-  body.sticky nav a i.fa {
+  body div.sticky nav a i.fa {
     font-size: 24px;
     line-height: 35px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.sticky nav a {
+  body div.sticky nav a {
     height: 35px;
     width: 35px;
     float: none;
     display: block;
     margin-bottom: 3px;
   }
-  body.sticky nav a i.fa {
+  body div.sticky nav a i.fa {
     font-size: 24px;
     line-height: 35px;
   }
@@ -342,7 +340,13 @@ main {
 }
 @media (max-width: 767px) {
   main {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  main {
     margin-right: 35px !important;
+    margin-top: 20px;
   }
 }
 main .content {
@@ -378,7 +382,7 @@ main .content.about .headshot img {
     float: none;
     text-align: center;
     width: 50%;
-    margin: -20% auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 }
 main .content.process {
@@ -427,6 +431,10 @@ main .content.portfolio .project .header {
   text-align: center;
   padding: 2%;
 }
+main .content.portfolio .project .header img {
+  margin: 0 auto;
+  width: 80%;
+}
 main .content.portfolio .project .header h3 {
   margin: 20px 0;
 }
@@ -441,6 +449,7 @@ main .content.contact img.me {
   border: 3px solid #888;
   margin-bottom: 20px;
   width: 100%;
+  max-width: 300px;
 }
 main .content.resume {
   background-color: rgba(255, 255, 255, 0);
