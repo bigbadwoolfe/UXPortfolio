@@ -407,6 +407,13 @@ main .content.portfolio img.logo {
     margin: 0 auto;
   }
 }
+main .content.portfolio .other-companies {
+  text-align: center;
+}
+main .content.portfolio .other-companies img {
+  width: 80%;
+  margin: 10px auto;
+}
 main .content.portfolio blockquote {
   color: #0193dc;
 }
