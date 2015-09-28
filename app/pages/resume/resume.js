@@ -9,6 +9,14 @@ angular.module('mbPortfolio.resume', ['ngRoute'])
   });
 }])
 
-.controller('ResumeCtrl', [function() {
+.controller('ResumeCtrl', ['$scope', function($scope) {
+      $scope.collapsed = true;
 
+      $scope.collapseText = 'show details';
+
+
+      $scope.toggleDetails = function() {
+        $scope.collapsed = !$scope.collapsed;
+        $scope.collapseText  = $scope.collapsed ? 'Show Details': "Hide Details";
+      }
 }]);

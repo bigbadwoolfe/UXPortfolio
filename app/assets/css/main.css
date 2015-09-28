@@ -464,6 +464,70 @@ main .content.resume {
 main .content.resume p:first-child:first-letter {
   color: #d9271b;
 }
+main .content.resume .smart-right {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  main .content.resume .smart-right {
+    text-align: left;
+  }
+}
+main .content.resume .heading {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #d9271b;
+}
+main .content.resume .section .summary-btn {
+  background-color: #d9271b;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .content.resume .section .summary-btn:hover {
+  opacity: 1;
+}
+main .content.resume .section .title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+main .content.resume .section .group {
+  margin-bottom: 20px;
+}
+main .content.resume .section .group h2,
+main .content.resume .section .group h3 {
+  margin: 0;
+}
+main .content.resume .section .group .logo {
+  text-align: center;
+  font-size: 10px;
+}
+main .content.resume .section .group .logo img {
+  width: 80%;
+  max-width: 150px;
+}
+main .content.resume .section .group .gr-content {
+  border-bottom: 1px dotted #d9271b;
+}
+main .content.resume .section .group .mini-heading {
+  margin-bottom: 10px;
+}
+main .content.resume .section .group .skill {
+  margin-bottom: 5px;
+}
+main .content.resume .section .group .skill .name {
+  font-weight: 300;
+  font-size: 12px;
+}
+main .content.resume .section .group .skill .progress {
+  margin-bottom: 0;
+}
 main .content .inline-image-holder {
   text-align: center;
   vertical-align: top;
@@ -524,4 +588,7 @@ main .card .img-circle {
   color: #ffffff;
   margin-top: 10px;
   font-size: 12px;
+}
+.progress {
+  border-radius: 0;
 }

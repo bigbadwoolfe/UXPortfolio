@@ -1,3 +1,301 @@
-<div class="content resume">
-    <p>This is the partial for resume.</p>
+<div class="row" ng-controller="ResumeCtrl">
+    <div class="col-xs-12 content resume">
+
+
+        <div class="heading">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Metodi Baniski</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>UX Lead Designer & Senior Web Developer</h4>
+                    <h4>Seagate Technology</h4>
+                </div>
+                <div class="col-sm-6 smart-right">
+                    <h4>Computer Science (Hon. BSc.)</h4>
+                    <h4>University of Toronto</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">
+                Professional Experience
+
+                <div class="summary-btn pull-right" ng-click="toggleDetails();">{{collapseText}}</div>
+            </div>
+            <div class="row group">
+
+                <div class="col-sm-2 logo">
+                    <img src="assets/images/res-logo-seagate.png" title="Seagate Technology" /> <br />
+                    July 2012 - present
+                </div>
+                <div class="col-sm-10 gr-content">
+                    <h2>Seagate Technology</h2>
+                    <h3>UX Lead Designer & Senior Web Developer</h3>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Duties</h4>
+                            <ul>
+                                <li>Lead the design of 3 independent web applications</li>
+                                <li>Design new and improve existing application features</li>
+                                <li>Coordinate work between team members on 3 continents</li>
+                                <li>Create, maintain and enforce UI standards</li>
+                                <li>Assist in requirements gathering, feature identification and story writing</li>
+                                <li>Mentor team members on software usability best practices </li>
+                                <li>Full stack software development, front end development focus</li>
+                                <li>Consult across organization on user centered design and improving user experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li>Established 'User Experience' as a primary concern in a heavily engineering driven office. All products now exiting are now built around the needs of end users.</li>
+                                <li>Introduced UI responsiveness. The applications I work on are now mobile friendly. </li>
+                                <li>Created applications that have become the UI templates across the organization. </li>
+                                <li>Improved workflows that save up to 90% of the time spent in the application. </li>
+                                <li>Hosted "lunch and learns" on usability and user experience resulting in more user friendly UIs with reduced guidance. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>Time Utilization:</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 60%">
+                            Design
+                        </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 15%">
+                            Development
+                        </div>
+                        <div class="progress-bar" style="width: 25%">
+                            Team Management
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row group">
+
+                <div class="col-sm-2 logo">
+                    <img src="assets/images/res-logo-agility.png" title="Agility CMS" /> <br />
+                    June 2011 - July 2012
+                </div>
+                <div class="col-sm-10 gr-content">
+                    <h2>Agility CMS</h2>
+                    <h3>Web Developer</h3>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Duties</h4>
+                            <ul>
+                                <li>Designed, implemented and deployed complete web solutions</li>
+                                <li>Analyzed user workflows for ad efficiency optimization </li>
+                                <li>Estimated effort, identified risks for projects</li>
+                                <li>Refactored and optimized UIs</li>
+                                <li>Produced documentation and technical specifications for web applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li>Designed and implemented components for high traffic web sites used by hundreds of thousands of users each month</li>
+                                <li>Created mechanism for quick and easy user-specific UI customization</li>
+                                <li>Improved checkout process resulting in increase in conversion rates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>Time Utilization:</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 40%">
+                            Design
+                        </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 60%">
+                            Development
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="group">
+                <div class="row">
+                    <div class="col-sm-2 logo">
+                        <img src="assets/images/res-logo-dh.png" title="Davis + Henderson" /> <br />
+                        July 2008 - June 2011
+                    </div>
+                    <div class="col-sm-10 gr-content">
+                        <h2>Davis + Henderson</h2>
+                        <h3>Software Developer</h3>
+
+                        <div class="row" ng-show="!collapsed">
+                            <h4>Duties</h4>
+                            <ul>
+                                <li>Architected. designed and implemented end-to-end workflows for financial applications</li>
+                                <li>Inspected UIs for inconsistencies and errors</li>
+                                <li>Managed code across multiple environments</li>
+                                <li>Performed peer code reviews</li>
+                                <li>Participated in creation and improvement of development processes</li>
+                                <li>Optimized ticket management processes</li>
+                            </ul>
+                        </div>
+
+                        <div class="row" ng-show="!collapsed">
+                            <div class="col-sm-12">
+                                <h4>Accomplishments</h4>
+                                <ul>
+                                    <li>Created tools to automate code promotions speeding up the process by 75%</li>
+                                    <li>Improved ticket management process resulting in quicker bug turnaround</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>Time Utilization:</h4>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 15%">
+                                Design
+                            </div>
+                            <div class="progress-bar progress-bar-warning" style="width: 50%">
+                                Development
+                            </div>
+                            <div class="progress-bar" style="width: 35%">
+                                Process Management
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row group">
+
+                <div class="col-sm-2 logo">
+                    <img src="assets/images/res-logo-nexj.png" title="NexJ Systems" /> <br />
+                    January 2008 - May 2008
+                </div>
+                <div class="col-sm-10 gr-content">
+                    <h2>NexJ Systems</h2>
+                    <h3>Services Consultant</h3>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Duties</h4>
+                            <ul>
+                                <li>Analyzed user requirements and converted to functional specifications</li>
+                                <li>Customized CRM for integration with third party financial systems</li>
+                                <li>Performed system troubleshooting and configuration</li>
+                                <li>Implemented, tested and documented application features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>Time Utilization:</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 20%">
+                            Architecture
+                        </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 65%">
+                            Development
+                        </div>
+                        <div class="progress-bar" style="width: 15%">
+                            Integration
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row group">
+                <div class="col-sm-2 logo">
+                    <img src="assets/images/res-logo-ibm.png" title="IBM" /> <br />
+                    May 2005 - September 2006
+                </div>
+                <div class="col-sm-10 gr-content">
+                    <h2>IBM</h2>
+                    <h3>Software Developer (Internship)</h3>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Duties</h4>
+                            <ul>
+                                <li>Designed, developed, maintained web applications</li>
+                                <li>Optimized web applications for accessibility on the web</li>
+                                <li>Performed user requirements analysis, created use case diagrams</li>
+                                <li>Handled application documentation and user training</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" ng-show="!collapsed">
+                        <div class="col-sm-12">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li>Designed and developed an application for software license management reducing the licensing cost by up to 50%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>Time Utilization:</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 20%">
+                            Design
+                        </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 65%">
+                            Development
+                        </div>
+                        <div class="progress-bar" style="width: 15%">
+                            Documentation
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="section">
+            <div class="title">
+                Technologies, tools and process proficiency
+            </div>
+            <div class="row group">
+                <div class="col-sm-4">
+                    <div class="mini-heading">Web Development:</div>
+                    <skill name="ASP.NET" score="65" />
+                    <skill name="AJAX" score="80" />
+                    <skill name="AngularJs" score="70" />
+                    <skill name="Bootstrap" score="100" />
+                    <skill name="C#" score="65" />
+                    <skill name="HTML" score="95" />
+                    <skill name="CSS(3)" score="100" />
+                    <skill name="jQuery" score="90" />
+                    <skill name="JavaScript" score="85" />
+                    <skill name="LESS" score="90" />
+                    <skill name="SQL" score="50" />
+                </div>
+                <div class="col-sm-4">
+                    <div class="mini-heading">Tools and applications:</div>
+                    <skill name="Axure RP" score="90" />
+                    <skill name="Balsamiq" score="80" />
+                    <skill name="Photoshop" score="70" />
+                    <skill name="Visual Studio" score="85" />
+                    <skill name="ReSharper" score="80" />
+                    <skill name="WebStorm" score="95" />
+                    <skill name="Firebug" score="100" />
+                    <skill name="Fiddler" score="55" />
+                    <skill name="CorelDRAW" score="60" />
+                </div>
+                <div class="col-sm-4">
+                    <div class="mini-heading">Processes:</div>
+                    <skill name="Requirements Analysis" score="90" />
+                    <skill name="Use Case Creation" score="85" />
+                    <skill name="Workflow Design" score="95" />
+                    <skill name="Interaction Design" score="95" />
+                    <skill name="Graphic Design" score="60" />
+                    <skill name="Software Usability" score="90" />
+                    <skill name="SOA" score="65" />
+                    <skill name="OOA/OOD" score="80" />
+                    <skill name="Design Patterns" score="75" />
+                    <skill name="Agile Development" score="80" />
+                    <skill name="Team Leadership" score="70" />
+                    <skill name="Client Facing" score="75" />
+                    <skill name="Public Speaking" score="75" />
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
