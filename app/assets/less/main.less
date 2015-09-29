@@ -644,6 +644,19 @@ main {
     .modal-body {
       background-color: @black;
 
+      .close-msg {
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        background-color: rgba(0,0,0,0.75);
+        color: @white;
+        margin-top: -15px;
+        .transition(all 1.5s ease);
+        &.bye {
+          opacity: 0;
+        }
+      }
+
       .image-desc {
         color: @white;
         margin-top:10px;

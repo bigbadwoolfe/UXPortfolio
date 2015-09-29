@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mbPortfolio.components')
-.controller('ImagePopController', ['$scope', '$modalInstance', 'url', 'desc', function($scope, $modalInstance, url, desc) {
+.controller('ImagePopController', ['$scope', '$modalInstance', '$timeout', 'url', 'desc', function($scope, $modalInstance, $timeout, url, desc) {
         $scope.url = url;
         $scope.desc = desc;
 
@@ -12,5 +12,13 @@ angular.module('mbPortfolio.components')
         $scope.cancel = function() {
             $modalInstance.close(false);
         }
+
+        $scope.showHideMsg = true;
+
+        $timeout(function() {
+            $scope.showHideMsg = false;
+
+        }, 3000)
+
 
     }]);

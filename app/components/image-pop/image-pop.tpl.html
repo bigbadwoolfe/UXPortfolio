@@ -1,4 +1,5 @@
 <div class="modal-body modal-image">
+    <div class="pull-right close-msg" ng-class="showHideMsg ? '' : 'bye'">Click or tap anywhere to close</div>
     <img ng-src="{{url}}" width="100%" ng-click="cancel()" />
     <div class="image-desc" ng-if="desc">
         {{desc}}
