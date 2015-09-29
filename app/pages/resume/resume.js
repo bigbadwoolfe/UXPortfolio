@@ -17,6 +17,6 @@ angular.module('mbPortfolio.resume', ['ngRoute'])
 
       $scope.toggleDetails = function() {
         $scope.collapsed = !$scope.collapsed;
-        $scope.collapseText  = $scope.collapsed ? 'Show Details': "Hide Details";
+        $scope.collapseText  = $scope.collapsed ? 'Show Details': "Show Summary";
       }
 }]);
