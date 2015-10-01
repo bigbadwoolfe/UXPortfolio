@@ -168,11 +168,11 @@
             and show as much relevant information at once.
         </p>
         <p>When asked how important the attractiveness of the application is on a scale from 1 to 10, to my surprise, approximately 75% of the interviewees answered
-            4 or below and only about 15% valued attractive UIs at 7 or above. </p>
+            4 or below and only about 15% rated attractive UIs at 7 or above. </p>
 
         <p>So I did a visual exercise with the same users, showing them screen shots of 2 applications that serve identical purpose - the original <em>Web Access</em>
             and my high fidelity prototypes, which I considered visually superior - it was precise, consistent, symmetrical and less cluttered. The result - around 80% picked the prototype
-            as their choice and the rest said could go either way. Nobody was adamant about choosing the inferior UI.
+            as their choice and the rest said could go either way. Nobody was adamant about choosing what I considered the inferior UI.
         </p>
 
         <div class="inline-image-holder clearfix">
@@ -195,8 +195,7 @@
         <p>It was clear that our users valued aesthetics even though they weren't specifically asking for it. But the aesthetics could not
             be getting in the way of the tasks the users were trying to achieve.
         </p>
-        <p>When asked about things they would improve in competitor's products, a common suggestion was to create bulk actions and ability to
-            automate tasks. This confirmed the findings from my competitive analysis. </p>
+        <p>When asked about things they would improve in competitor's products, a common suggestion was to create ability for bulk actions task automation. This only reaffirmed the findings from the competitive analysis. </p>
 
         <blockquote>
             Although 75% of users stated they didn't care about how visually pleasing the user interface was,  <br />80% went for a superior one when asked to choose between two.
@@ -218,7 +217,7 @@
         </p>
         <p>
             I designed scalable and reusable controls such as drop-down menus, date and time pickers and popup windows. I also created responsive layouts
-            that would scale the UI for different devices. This way more of the screen could be used for information and less for action items.
+            that would scale the UI for different devices. This resulted in more optimal space utilization for all device types.
         </p>
 
         <div class="inline-image-holder clearfix">
@@ -242,16 +241,21 @@
 
 
         <h3>Designing new features</h3>
-        <p>One of the features that got copied over from the old products was the reporting mechanism. The reports consisted of large
-            quantities of data displayed to the user in a tabular format with almost no interactivity. Data could be sorted but not searched, and as the amount of data grew,
-            it's value would diminish as it was almost impossible to interpret.
+        <p>One of the features that got copied over from the old products almost verbatim was the reporting mechanism. The reports consisted of large
+            quantities of data displayed to the user in tabular format with almost no interactivity. Data could be sorted but not searched, and as the amount of data grew,
+            it's value diminished as it was becoming almost impossible to interpret.
         </p>
         <p>The reporting feature was going to be one of the most frequently used, as users would be able to link the reported data to their billing. </p>
         <p>In the user interviews I learned that the users would appreciate a way to filter and sort their data. </p>
-        <p>Even with improved searching and sorting, large amounts of data in a table are likely to provide an inferior user experience and if not implemented really well, browser sluggishness.
-            So I set out to aggregate the data into an interactive graph. </p>
-        <p>I prototyped how the data would be most effectively shown and created a low fidelity functional mockup to better support the design.
-            Despite the quickly approaching launch date, this new and unplanned feature was given the green light without hesitation.</p>
+        <p>From previous experience, even with improved searching and sorting and a more precise UI, I knew large amounts of data in tabular
+            format are likely to produce inferior user experience. Additionally, if not implemented really well, browser sluggishness would probably
+            render the reports useless.
+            </p>
+        <p>So I set out to aggregate the data and present it as an interactive graph. </p>
+        <p>I prototyped how large amounts of reporting data would be most effectively scaled down to a report chart and
+            created a low fidelity functional mockup to better support the design.
+            </p><p>
+            Despite the quickly approaching launch date, this new and unplanned feature was given an easy green light.</p>
 
         <div class="inline-image-holder clearfix">
             <div class="row">
@@ -279,17 +283,20 @@
                 </div>
             </div>
         </div>
-        <p>This was one feature everyone fell in love with and users quickly abandoned the tabular reports even though they were refactored to allow for searching and sorting.</p>
+        <p>This was one feature everyone fell in love with and users quickly abandoned the tabular reports even though they offered everything the users themselves asked for. </p>
 
         <h3>Optimizing and improving workflows - the Log Viewer</h3>
-        <p>When analyzing user feedback, I discovered a major pain point in <em>Web Access</em>. Any time a backup process completes unsuccessfully, an administrator needs to go through the generated log files and see why the process failed. What caught my attention were the steps needed to get the required information beyond checking the log files themselves.</p>
+        <p>When analyzing user feedback, I discovered a major pain point in <em>Web Access</em>.
+            Any time a backup process completes unsuccessfully, an administrator needs to go through the generated log
+            files and see why the process failed.
+            What caught my attention were the steps needed to get the information sought after in the log files.</p>
         <ol>
             <li>Go through thousands of lines of log files and search for error codes</li>
-            <li>Write error codes on paper or Notepad</li>
-            <li>Open Seagate Knowledge Base - external website in a new browser window</li>
+            <li>Write error codes on paper or copy to a text editor</li>
+            <li>Open <em>Seagate Knowledge Base</em> in a new browser window - an external website</li>
             <li>Manually search for each error code</li>
-            <li>If any results, open each result in a new window to get the information</li>
-            <li>If no results, all that time was just wasted - call support</li>
+            <li>If any results were found, click each result and open in a new window to read more</li>
+            <li>If no results, all that time and effort was just wasted</li>
         </ol>
 
         <p>This was a very manual and tedious process, requiring constant switching between multiple application and juggling multiple error codes at once. </p>
@@ -297,10 +304,13 @@
         <p>
             My goal was to design a log viewer that would be the last place an administrator goes for information, and do it in a way that will require minimal effort.
         </p>
-        <p>I created an option to easily filter out error codes from the rest of the log content. This reduced the number of lines an admin sees by up to 95%.
-            I further added more interactivity to the log viewer - a user could see whether any error code has any search
-            results by simply clicking or hovering over the error code. The search results and their content were available in the same window with another click. </p>
-        <p>No more searching through thousands of lines of text, switching between application or juggling error codes.</p>
+        <p>I created an option to easily filter out error codes from the rest of the log content.
+            This reduced the number of lines an admin sees on average by 95%.
+            I further added more interactivity to the log viewer - the number of search results was given to the user by simply clicking or hovering on the error code.
+            A second click would load the list of search results in a dynamic pane and a third would load the content of the clicked
+            search result in another dynamic pane, all in the same window without any context switching.</p>
+
+        <p>No more searching through thousands of lines of text, switching between application, juggling error codes.</p>
         <div class="inline-image-holder clearfix">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
@@ -314,26 +324,26 @@
             <div class="row">
                 <div class="col-sm-4">
                     <figure>
-                        <img src="assets/images/seagate-log-viewer-new-1.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-1.png', 'resp', 'Brand new and improved log viewer searches knowledge base and displays results on the same screen')"/>
+                        <img src="assets/images/seagate-log-viewer-new-1.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-1.png', 'resp', 'Brand new and improved log viewer searches knowledge base on the fly')"/>
                         <figcaption>Brand new and improved log viewer searches knowledge base on the fly</figcaption>
                     </figure>
                 </div>
                 <div class="col-sm-4">
                     <figure>
-                        <img src="assets/images/seagate-log-viewer-new-2.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-2.png', 'resp', 'Brand new and improved log viewer searches knowledge base and displays results on the same screen')"/>
+                        <img src="assets/images/seagate-log-viewer-new-2.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-2.png', 'resp', 'Search results are displayed on the same screen')"/>
                         <figcaption>Search results are displayed on the same screen</figcaption>
                     </figure>
                 </div>
                 <div class="col-sm-4">
                     <figure>
-                        <img src="assets/images/seagate-log-viewer-new-3.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-3.png', 'resp', 'Brand new and improved log viewer searches knowledge base and displays results on the same screen')"/>
+                        <img src="assets/images/seagate-log-viewer-new-3.png" class="clickable" ng-click="showPhoto('assets/images/seagate-log-viewer-new-3.png', 'resp', 'Each search result can be further expanded on the same screen')"/>
                         <figcaption>Each search result can be further expanded on the same screen</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
         <p>
-            Mission accomplished successfully. The new log viewer became one of the most loved features of <em>Web Access</em>.
+            Success! No more frustration trying to understand why something failed. The new log viewer became one of the most loved features of <em>Web Access</em>.
         </p>
 
         <h3>Precise design documentation</h3>
@@ -415,11 +425,11 @@
 
 
         <h1>Lessons Learned</h1>
-        <h3>Users aren't as excited about the applications I design</h3>
+        <h3>Users aren't as excited about the applications I design as I am</h3>
         <p>Users want to login, finish their tasks and leave. Aesthetics is very important for the perception of quality, but if
             there is a finite amount of time for design and development, the user will never prefer to have a "prettier" interface
             that is less efficient. </p>
-        <p>So, design for function first, and keep beauty a close second.</p>
+        <p>So design for function first, but keep beauty a close second.</p>
 
 
         <h3>Users don't know what they want</h3>
