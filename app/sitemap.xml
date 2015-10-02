@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>http://www.metodi.baniski.com</loc>
+        <lastmod>2015-10-02</lastmod>
+        <changefreq>Weekly</changefreq>
+        <priority>0.65</priority>
+    </url>
+    <url>
+        <loc>http://metodi.baniski.com/#/resume</loc>
+        <lastmod>2015-10-02</lastmod>
+        <changefreq>Weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://metodi.baniski.com/#/portfolio</loc>
+        <lastmod>2015-10-02</lastmod>
+        <changefreq>Weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://metodi.baniski.com/#/contact</loc>
+        <lastmod>2015-10-02</lastmod>
+        <changefreq>Weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
